@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  resources :articles #Creates REST routes for articles
+  
   root 'welcome#index'
   get 'welcome/about'
   # The priority is based upon order of creation: first created -> highest priority.
