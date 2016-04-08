@@ -1,3 +1,3 @@
 class Article < ActiveRecord::Base
-    attr_accessor :title, :text
+   # Attr accessors will fill everything with nil do not add
 end

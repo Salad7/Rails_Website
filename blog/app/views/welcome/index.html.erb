@@ -1,11 +1,19 @@
-<h1>Welcome Page</h1>
-<p>Welcome to the page managed by Mohamed Salad</p>
+
+
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="http://www.railstutorial.org/">Mohamed Salads webpage</a>
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
+            
 <button type="button">About</button>
 <a href="/welcome/about">About</a>
 <a href="/articles">Articles</a>
-
-<ul compact>
-  <li>April 2016</li>
-  <li>March 2016</li>
-  <li>Feburary 2016</li>
-</ul>

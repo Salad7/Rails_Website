@@ -1,8 +1,6 @@
 class ArticlesController < ApplicationController
     
-  def article_params
-    params.require(:article).permit(:title, :text)
-  end
+
     
     def index
         @articles = Article.all
@@ -15,12 +13,12 @@ class ArticlesController < ApplicationController
     def create
         #Create an article
         #@params holds the paramaters we are intrested in
-        @article = Article.new(article_params)
+        @article = Article.create!(article_params)
         
-       # byebug 
+      
         
         #Save the article
-        @article.save
+       # @article.save
         
         #redirecting the user to the show action
         redirect_to @article
@@ -32,4 +30,7 @@ class ArticlesController < ApplicationController
         @article = Article.find(params[:id])
     end
     
+      def article_params
+         params.require(:article).permit(:title, :text)
+      end
 end

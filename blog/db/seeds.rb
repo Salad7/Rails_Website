@@ -5,4 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Article.create(:title => 'April 16', :text => 'Example seed')
+Article.create!(:title => 'April 16', :text => 'Example seed')
