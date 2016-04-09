@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
     def create
         #Create an article
         #@params holds the paramaters we are intrested in
+        byebug
         @article = Article.create!(article_params)
         
       
@@ -21,6 +22,7 @@ class ArticlesController < ApplicationController
        # @article.save
         
         #redirecting the user to the show action
+
         redirect_to @article
         
         
