@@ -16,8 +16,10 @@
 /* universal */
 
 body {
-  padding-top: 50px;
+  padding-top: 150px;
+  padding: 5em inherit;
 }
+
 
 section {
   overflow: auto;
@@ -47,6 +49,8 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+  bottom: 0;
+ 
 }
 
 footer a {
@@ -71,4 +75,8 @@ footer ul li {
   margin-left: 15px;
 }
 
+.jumbotron
+{
+  min-height: 600px;
+}
 /* Side list Code */

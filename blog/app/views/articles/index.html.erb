@@ -8,11 +8,13 @@
  
   <% @articles.each do |article| %>
     <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
+      <div class="container">
+      <h1><%= article.title %></h1>
+      <p><%= article.text %></p>
+      </div>
     </tr>
   <% end %>
 </table>
 
 
-<a href="articles/new">New Article</a>
+<%= link_to "New Article", new_article_path %>
