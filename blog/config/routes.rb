@@ -3,10 +3,8 @@ Rails.application.routes.draw do
   resources :articles #Creates REST routes for articles
   
   root 'welcome#index'
-  get 'welcome/about'
-  get  'welcome/help'
-  get  'welcome/about'
-  get  'welcome/contact'
+  get 'about' => 'welcome#about'
+  get 'login' => 'welcome#login'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
