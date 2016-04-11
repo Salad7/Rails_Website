@@ -11,9 +11,6 @@ class ArticlesController < ApplicationController
     
     #The create is responsible for saving the article
     def create
-        #Create an article
-        #@params holds the paramaters we are intrested in
-        byebug
         @article = Article.create!(article_params)
         
       
